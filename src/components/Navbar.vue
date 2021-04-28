@@ -1,6 +1,7 @@
 <template>
     <nav>
-        <v-toolbar flat app>
+        <v-app-bar app>
+        <!-- <v-toolbar text app> -->
 
             <v-app-bar-nav-icon class="grey--text" @click="drawer = !drawer">
             </v-app-bar-nav-icon>
@@ -10,13 +11,14 @@
                 <span>Ninja</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-btn flat grey>
+            <v-btn text grey>
                 <span>Sign Out</span>
                 <v-icon right>exit_to_app</v-icon>
             </v-btn>
-        </v-toolbar>
+        <!-- </v-toolbar> -->
+        </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" app class="indigo">
+        <v-navigation-drawer v-model="drawer" app class="primary">
             <p>test</p>
         </v-navigation-drawer>
 
